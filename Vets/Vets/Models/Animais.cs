@@ -26,9 +26,5 @@ namespace Vets.Models {
         public Donos Dono { get; set; }
 
         public ICollection<Consultas> ListaConsultas { get; set; }
-
-
-
-
     }
 }
