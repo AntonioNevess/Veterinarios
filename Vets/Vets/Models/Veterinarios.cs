@@ -19,7 +19,7 @@
         /// </summary>
         public string NumCedulaProf { get; set; }
         /// <summary>
-        /// Nomo do ficheiro que contem a fotografia do Veterinario
+        /// Nome do ficheiro que contem a fotografia do Veterinario
         /// </summary>
         public string Fotografia { get; set; }
         /// <summary>
