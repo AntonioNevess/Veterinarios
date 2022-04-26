@@ -231,21 +231,7 @@ namespace Vets.Controllers
         // POST: Veterinarios/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id) {
-            try {
-                var veterinarios = await _context.Veterinarios.FindAsync(id);
-                _context.Veterinarios.Remove(veterinarios);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-                
-                //remover o ficheiro com a foto do Veterinário
-                //se a foto NÃO FOR  a "noVet.png"
-            }
-            catch {
-
-            }
-            
-        }
+        
 
         private bool VeterinariosExists(int id)
         {
